@@ -23,7 +23,7 @@ public class SetTest {
     }
 
     @Test
-    public void canHashSetClusteringProcesses(){
+    public void couldHashSetClusteringProcesses(){
         Set<Integer> firstIntegers = new HashSet<Integer>();
         Set<Integer> nextIntegers = new HashSet<Integer>();
 

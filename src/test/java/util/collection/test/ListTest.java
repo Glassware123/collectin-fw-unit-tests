@@ -22,4 +22,26 @@ public class ListTest {
     }
 
 
+    @Test
+    public void couldArrayListClusteringProcesses() {
+        List<Integer> firstIntegers = new ArrayList<Integer>();
+        List<Integer> nextIntegers = new ArrayList<Integer>();
+
+        firstIntegers.add(5);
+        firstIntegers.add(7);
+        firstIntegers.add(9);
+        firstIntegers.add(20);
+        firstIntegers.add(10);
+
+        nextIntegers.add(9);
+        nextIntegers.add(7);
+        nextIntegers.add(9);
+        nextIntegers.add(30);
+        nextIntegers.add(10);
+
+        nextIntegers.retainAll(firstIntegers);
+
+        assertEquals(4,nextIntegers.size());
+
+    }
 }
