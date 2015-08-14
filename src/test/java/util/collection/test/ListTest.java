@@ -10,7 +10,7 @@ import static org.junit.Assert.assertEquals;
 public class ListTest {
 
     @Test
-    public void listTest() {
+    public void isArrayListUnique() {
 
         List<Integer> integers = new ArrayList<Integer>();
 
@@ -20,4 +20,6 @@ public class ListTest {
         assertEquals(2, integers.size());
 
     }
+
+
 }
