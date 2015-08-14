@@ -13,7 +13,7 @@ public class SetTest {
 
 
     @Test
-    public void setTest(){
+    public void isHashSetUnique() {
 
         Set<Integer> integers = new HashSet<Integer>();
         integers.add(5);
@@ -57,6 +57,7 @@ public class SetTest {
     @Test
     public void isLinkedHashSetImplSorted() {
         Set<Integer> integers = new LinkedHashSet<Integer>();
+
         integers.add(5);
         integers.add(6);
         integers.add(7);
