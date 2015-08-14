@@ -2,9 +2,11 @@ package util.collection.test;
 
 import org.junit.Test;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class SetTest {
 
@@ -12,18 +14,17 @@ public class SetTest {
     @Test
     public void setTest(){
 
-        Set<Integer> integerSet = new HashSet<Integer>();
-        integerSet.add(5);
-        integerSet.add(5);
+        Set<Integer> integers = new HashSet<Integer>();
+        integers.add(5);
+        integers.add(5);
 
-        assertEquals(1,integerSet.size());
+        assertEquals(1, integers.size());
     }
 
     @Test
     public void canHashSetClusteringProcesses(){
         Set<Integer> firstIntegers = new HashSet<Integer>();
         Set<Integer> nextIntegers = new HashSet<Integer>();
-        Set<Integer> diffOfIntegers = new HashSet<Integer>();
 
         firstIntegers.add(5);
         firstIntegers.add(8);
@@ -42,14 +43,14 @@ public class SetTest {
     }
     @Test
     public void isTreeSetImplSorted() {
-        Set<Integer> integerSet = new TreeSet<Integer>();
-        integerSet.add(5);
-        integerSet.add(4);
-        integerSet.add(19);
-        integerSet.add(10);
+        Set<Integer> integers = new TreeSet<Integer>();
+        integers.add(5);
+        integers.add(4);
+        integers.add(19);
+        integers.add(10);
 
-        assertEquals(4, integerSet.toArray()[0]);
-        assertEquals(19, integerSet.toArray()[3]);
+        assertEquals(4, integers.toArray()[0]);
+        assertEquals(19, integers.toArray()[3]);
     }
 
 

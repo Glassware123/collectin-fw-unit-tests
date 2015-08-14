@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="359f55ff-fdb1-4490-a878-a72874d2fd50" name="Default" comment="" />
+    <list default="true" id="359f55ff-fdb1-4490-a878-a72874d2fd50" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/util/collection/test/ListTest.java" afterPath="$PROJECT_DIR$/src/test/java/util/collection/test/ListTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/util/collection/test/SetTest.java" afterPath="$PROJECT_DIR$/src/test/java/util/collection/test/SetTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="UtilDemo.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,31 +28,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SetTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SetTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/util/collection/test/SetTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75376886">
-              <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#219#228#0" expanded="true" />
-                <element signature="e#444#453#0" expanded="true" />
-                <element signature="e#504#513#0" expanded="true" />
-                <element signature="e#566#575#0" expanded="true" />
-                <element signature="e#1017#1026#0" expanded="true" />
+                <element signature="e#217#226#0" expanded="true" />
+                <element signature="e#437#446#0" expanded="true" />
+                <element signature="e#497#506#0" expanded="true" />
+                <element signature="e#946#955#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ListTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/util/collection/test/ListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.35929647">
+              <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#256#265#0" expanded="true" />
+                <element signature="e#253#262#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,6 +65,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -80,8 +86,8 @@
         <option value="$PROJECT_DIR$/src/test/java/java/util/collection/ListTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/java/util/collection/SetTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/java/util/collection/test/SetTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/util/collection/test/ListTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/util/collection/test/SetTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/util/collection/test/ListTest.java" />
       </list>
     </option>
   </component>
@@ -109,7 +115,7 @@
     <option name="width" value="1280" />
     <option name="height" value="730" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -595,18 +601,21 @@
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="359f55ff-fdb1-4490-a878-a72874d2fd50" name="Default" comment="" />
       <created>1439537150698</created>
       <option name="number" value="Default" />
       <updated>1439537150698</updated>
-      <workItem from="1439537157391" duration="4747000" />
+      <workItem from="1439537157391" duration="5160000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4747000" />
+    <option name="totallyTimeSpent" value="5160000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="730" extended-state="6" />
@@ -630,7 +639,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32913387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32913387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -702,28 +711,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/util/collection/test/ListTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/util/collection/test/SetTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#256#265#0" expanded="true" />
+            <element signature="e#217#226#0" expanded="true" />
+            <element signature="e#437#446#0" expanded="true" />
+            <element signature="e#497#506#0" expanded="true" />
+            <element signature="e#946#955#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/util/collection/test/SetTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/util/collection/test/ListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75376886">
-          <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.35929647">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#219#228#0" expanded="true" />
-            <element signature="e#444#453#0" expanded="true" />
-            <element signature="e#504#513#0" expanded="true" />
-            <element signature="e#566#575#0" expanded="true" />
-            <element signature="e#1017#1026#0" expanded="true" />
+            <element signature="e#253#262#0" expanded="true" />
           </folding>
         </state>
       </provider>
