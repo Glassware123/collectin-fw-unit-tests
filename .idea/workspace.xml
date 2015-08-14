@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40999a70-aba7-472c-9052-2968864de268" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/util/collection/test/MapTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="UtilDemo.iws" />
@@ -579,7 +578,7 @@
       <created>1439558146861</created>
       <option name="number" value="Default" />
       <updated>1439558146861</updated>
-      <workItem from="1439558148451" duration="1957000" />
+      <workItem from="1439558148451" duration="1988000" />
     </task>
     <task id="LOCAL-00001" summary="couldArrayListClusteringProcesses test method added">
       <created>1439558450031</created>
@@ -593,11 +592,17 @@
       <option name="project" value="LOCAL" />
       <updated>1439560651433</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="some MapTest methods added">
+      <created>1439561384334</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1439561384334</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1957000" />
+    <option name="totallyTimeSpent" value="1988000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -635,7 +640,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="couldArrayListClusteringProcesses test method added" />
     <MESSAGE value="baseMapTest test method added" />
-    <option name="LAST_COMMIT_MESSAGE" value="baseMapTest test method added" />
+    <MESSAGE value="some MapTest methods added" />
+    <option name="LAST_COMMIT_MESSAGE" value="some MapTest methods added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
