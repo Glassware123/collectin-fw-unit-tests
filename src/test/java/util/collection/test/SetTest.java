@@ -3,6 +3,7 @@ package util.collection.test;
 import org.junit.Test;
 
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -53,5 +54,20 @@ public class SetTest {
         assertEquals(19, integers.toArray()[3]);
     }
 
+    @Test
+    public void isLinkedHashSetImplSorted() {
+        Set<Integer> integers = new LinkedHashSet<Integer>();
+        integers.add(5);
+        integers.add(6);
+        integers.add(7);
+        integers.add(7);
+        integers.add(9);
+        integers.add(3);
+
+        assertEquals(3, integers.toArray()[4]);
+        assertEquals(7, integers.toArray()[2]);
+        assertEquals(5, integers.toArray()[0]);
+
+    }
 
 }
