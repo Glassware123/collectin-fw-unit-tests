@@ -1,11 +1,9 @@
 package util.collection.test;
 
 import org.junit.Test;
+import util.collection.test.builder.MapBuilder;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import static org.junit.Assert.*;
 
@@ -51,31 +49,15 @@ public class MapTest {
 
     @Test
     public void shouldReturnKeySet(){
-        Map<String, List<Integer>> map = new HashMap<String, List<Integer>>();
-        List<Integer> firstIntegers = new ArrayList<Integer>();
-        List<Integer> nextIntegers = new ArrayList<Integer>();
-
-        firstIntegers.add(5);
-        firstIntegers.add(7);
-        firstIntegers.add(9);
-        firstIntegers.add(20);
-        firstIntegers.add(10);
-
-        nextIntegers.add(9);
-        nextIntegers.add(7);
-        nextIntegers.add(9);
-        nextIntegers.add(30);
-        nextIntegers.add(10);
-
-        map.put("firstKey",firstIntegers);
-        map.put("secondKey",nextIntegers);
+        Map map = new MapBuilder().build();
 
         assertEquals(2,map.keySet().size());
     }
 
     @Test
     public void shouldReturnKeysSize(){
-        Map<String, List<Integer>> map = new HashMap<String, List<Integer>>();
+
+        Map<String, List<Integer>> map = new TreeMap<String, List<Integer>>();
         List<Integer> firstIntegers = new ArrayList<Integer>();
         List<Integer> nextIntegers = new ArrayList<Integer>();
 
@@ -92,10 +74,19 @@ public class MapTest {
         nextIntegers.add(10);
         nextIntegers.add(15);
 
-        map.put("firstKey",firstIntegers);
         map.put("secondKey",nextIntegers);
+        map.put("firstKey",firstIntegers);
 
         assertEquals(5,map.get("firstKey").size());
         assertEquals(6,map.get("secondKey").size());
     }
+
+    @Test
+    public void isTreeMapSorted(){
+
+        Map map = new MapBuilder().build();
+
+        assertEquals("secondKey",map.keySet().toArray()[1]);
+    }
+
 }
