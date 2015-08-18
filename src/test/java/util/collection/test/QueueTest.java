@@ -84,4 +84,19 @@ public class QueueTest {
 
     }
 
+    @Test
+    public void linkedListClearTest(){
+        Deque<Integer> queue = new LinkedList<Integer>();
+
+        queue.add(10);
+        queue.add(8);
+        queue.add(12);
+        queue.add(90);
+
+        queue.clear();
+
+        assertEquals(0,queue.size());
+    }
+
+
 }
