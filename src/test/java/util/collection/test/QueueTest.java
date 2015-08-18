@@ -2,6 +2,7 @@ package util.collection.test;
 
 import org.junit.Test;
 
+import java.util.Deque;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Queue;
@@ -63,6 +64,23 @@ public class QueueTest {
 
         assertEquals(true,queue.offer(5));
         assertEquals(5,(int)queue.peek());
+
+    }
+
+    @Test
+    public void linkedListOfferTest(){
+        Deque<Integer> queue = new LinkedList<Integer>();
+
+        queue.add(10);
+        queue.add(8);
+        queue.add(12);
+        queue.add(90);
+
+        assertEquals(10,(int)queue.peek());
+        assertTrue(queue.offerFirst(5));
+        assertTrue(queue.offerLast(20));
+        assertEquals(5,(int)queue.peek());
+        assertEquals(20,(int)queue.peekLast());
 
     }
 
