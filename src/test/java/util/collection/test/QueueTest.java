@@ -6,6 +6,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Queue;
+import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
@@ -149,6 +150,7 @@ public class QueueTest {
     public void linkedBlockingQueueRemainingCapacityTest() {
         BlockingQueue<Integer> queue = new LinkedBlockingQueue<Integer>();
 
+        assertEquals(2147483647, queue.remainingCapacity());
         queue.add(10);
         queue.add(8);
         queue.add(12);
@@ -156,6 +158,28 @@ public class QueueTest {
 
         assertEquals(2147483643, queue.remainingCapacity());
         queue.add(50);
-        assertEquals(2147483642,queue.remainingCapacity());
+        assertEquals(2147483642, queue.remainingCapacity());
+    }
+
+    @Test
+    public void arrayBlockingQueueAddElementTest() {
+        BlockingQueue<Integer> queue = new ArrayBlockingQueue<Integer>(10);
+
+        assertEquals(10, queue.remainingCapacity());
+        while (queue.remainingCapacity() > 0) {
+            queue.add(10);
+        }
+        assertEquals(10,queue.size());
+
+    }
+    @Test(expected = IllegalStateException.class)
+    public void shouldThrowIllegalStateExceptionWhenAddElementFullQueue() {
+        BlockingQueue<Integer> queue = new ArrayBlockingQueue<Integer>(10);
+
+        assertEquals(10, queue.remainingCapacity());
+        while (queue.remainingCapacity() > 0) {
+            queue.add(10);
+        }
+        queue.add(120);
     }
 }
