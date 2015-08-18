@@ -2,14 +2,8 @@ package util.collection.test;
 
 import org.junit.Test;
 
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.PriorityQueue;
-import java.util.Queue;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.LinkedBlockingQueue;
-import java.util.concurrent.TimeUnit;
+import java.util.*;
+import java.util.concurrent.*;
 
 import static org.junit.Assert.*;
 
@@ -169,9 +163,10 @@ public class QueueTest {
         while (queue.remainingCapacity() > 0) {
             queue.add(10);
         }
-        assertEquals(10,queue.size());
+        assertEquals(10, queue.size());
 
     }
+
     @Test(expected = IllegalStateException.class)
     public void shouldThrowIllegalStateExceptionWhenAddElementFullQueue() {
         BlockingQueue<Integer> queue = new ArrayBlockingQueue<Integer>(10);
@@ -182,4 +177,34 @@ public class QueueTest {
         }
         queue.add(120);
     }
+
+    @Test
+    public void priorityBlockingQueueContainsTest() {
+        BlockingQueue<Integer> queue = new PriorityBlockingQueue<Integer>();
+        queue.add(10);
+        queue.add(50);
+        queue.add(12);
+        queue.add(90);
+        assertTrue(queue.contains(50));
+    }
+
+    @Test
+    public void priorityBlockingQueueContainsAllTest() {
+        BlockingQueue<Integer> queue = new PriorityBlockingQueue<Integer>();
+        List<Integer> queueList = new ArrayList<Integer>();
+
+        queue.add(10);
+        queue.add(50);
+        queue.add(12);
+        queue.add(90);
+
+        queueList.add(12);
+        queueList.add(10);
+        queueList.add(50);
+        queueList.add(90);
+
+
+        assertTrue(queue.containsAll(queueList));
+    }
+
 }
